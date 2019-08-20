@@ -1,0 +1,12 @@
+<h3>Welcome to StyleX!  We're glad you're here!</h3>
+
+<p><b>To get started, please provide the following information</b></p>
+
+<%=form_for @user do |f|%>
+    First Name: <%=f.text_field :first_name%><br>
+    Last Name: <%=f.text_field :last_name%><br>
+    Bio: <%=f.text_area :bio%><br>
+    Username: <%=f.text_field :username%><br>
+    Password: <%=f.password_field :password%><br>
+    <%=f.submit%>
+<%end%>

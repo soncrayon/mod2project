@@ -1,0 +1,10 @@
+<p>Please enter your username and password</p>
+<%=form_tag users_path do %>
+    <%=label_tag 'Username: '%><br>
+    <%=text_field_tag 'user[username]'%><br>
+    <%=label_tag 'Password: '%><br>
+    <%=password_field_tag 'user[password]'%><br><br>
+    <%=submit_tag 'Login'%><br><br>
+<%end%>
+
+<%=link_to 'Homepage', welcome_path%>

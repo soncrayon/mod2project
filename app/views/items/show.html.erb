@@ -1,0 +1,18 @@
+<h1><%=@item.name%></h1>
+<h3><%=@item.brand%></h3>
+
+<p>Item Style: <%=@item.style.name%></p>
+<p>Item Category: <%=@item.category.name%></p>
+
+<br>
+
+<p>Users with this item in their outfits:</p>
+<ul>
+<%@item.outfits.each do |o|%>
+    <li><%=o.user.name%></li>
+<%end%>
+</ul>
+
+<br>
+
+<%=link_to 'All Items', items_path%>
